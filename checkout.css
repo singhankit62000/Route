@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: context-menu;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display';
+}
+
+/* Navigation Bar*/
+.book-list {
+    height: 62px;
+    width: 100%;
+    background-color: #6d2b3b;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.book-itm a{
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #ead3cb;
+    border: 2px solid #ead3cb;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-itm a:hover {
+    background-color: #ead3cb;
+    border-radius: 20px;
+    color: #6d2b3b;
+    font-weight: 600;
+}
+
+/* Content */
+
+.checkout-head {
+    margin-top: 15px;
+    color: #5e2332;
+    font-family: Poppins;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.illustration {
+    width: 50%;
+    height: 30%;
+    padding: 2%;
+    margin-left: 3%;
+    animation: illus 4s ease-in-out infinite alternate;
+    display: flex;
+    flex-flow: row wrap;
+    /* border: 1px solid #5e2332; */
+}
+
+@keyframes illus {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(48px);
+    }
+}
+
+.book-box {
+    width: 500px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.book-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.booking-head {
+    font-size: 2rem;
+    color: black;
+    font-family: Comfortaa;
+    padding: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.book-box label {
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: left;
+    font-weight: 600;
+    color: #3d3736;
+}
+
+.book-cont input {
+    text-align: left;
+    cursor: text;
+}
+
+.book-cont div input[type="number"] {
+    width: 15%;
+}
+
+.book-cont div input[type="tel"] {
+    width: 82%;
+}
+
+.pay-btn {
+    background-color: white;
+    color: #6d2b3b;
+    border: 2px solid #6d2b3b;
+    font-family: 'Comfortaa';
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pay-btn:hover {
+    background-color: #6d2b3b;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.pay-btn:focus {
+    box-shadow: 0 0 0 3px #ead3cb;
+}
+
+/* Footer */
+#footer {
+    background: linear-gradient(to right, #25110a 0%, #5e2332 50%, #25110a 100%);
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.foot-txt {
+    padding: 20px;
+}
+
+.end {
+    margin-top: 10px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.footer-icons {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(104, 198, 235);
+}
+
+.fa-instagram:hover {
+    color: rgb(236, 173, 38);
+}
+
+.fa-twitter:hover {
+    color: rgb(54, 118, 214);
+}
+
+.fa-envelope:hover {
+    color: rgb(224, 88, 88);
+}
